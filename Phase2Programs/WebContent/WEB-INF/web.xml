@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Phase2Programs</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>n1</param-name>
+    <param-value>400</param-value>
+  </context-param>
+  <context-param>
+    <param-name>n2</param-name>
+    <param-value>700</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>headerservlet</servlet-name>
+    <servlet-class>advanced.java.program.HeaderDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>headerservlet</servlet-name>
+    <url-pattern>/headinfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>advanced.java.program.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>advanced.java.program.Dashboard</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
