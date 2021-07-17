@@ -10,26 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class HeaderDetails
- */
+
 @WebServlet("/HeaderDetails")
 public class HeaderDetails extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 
-    /**
-     * Default constructor. 
-     */
-    public HeaderDetails() {
-        // TODO Auto-generated constructor stub
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		response.setContentType("text/html");
 		PrintWriter pwriter = response.getWriter();
@@ -60,13 +45,4 @@ public class HeaderDetails extends HttpServlet {
 	     pwriter.println("<b> hlocalport </b>"+ hlocalport ); pwriter.println("<br>");
 	     pwriter.println("<b> hprotocol </b>"+ hprotocol );
 	  }
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-	}
-
 }

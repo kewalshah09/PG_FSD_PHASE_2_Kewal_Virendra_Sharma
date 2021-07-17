@@ -25,7 +25,6 @@
     <servlet-name>headerservlet</servlet-name>
     <url-pattern>/headinfo</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>LoginServlet</servlet-name>
     <servlet-class>advanced.java.program.LoginServlet</servlet-class>
@@ -34,14 +33,52 @@
     <servlet-name>Dashboard</servlet-name>
     <servlet-class>advanced.java.program.Dashboard</servlet-class>
   </servlet>
- 
   <servlet-mapping>
     <servlet-name>Dashboard</servlet-name>
     <url-pattern>/dashboard</url-pattern>
   </servlet-mapping>
-   <servlet-mapping>
+  <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>advanced.java.program.MyServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/process</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>firsturl</servlet-name>
+    <servlet-class>advanced.java.program.FirstUrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>firsturl</servlet-name>
+    <url-pattern>/rewrite1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>securl</servlet-name>
+    <servlet-class>advanced.java.program.SecUrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>securl</servlet-name>
+    <url-pattern>/securl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>hiddenform</servlet-name>
+    <servlet-class>advanced.java.program.HiddenForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hiddenform</servlet-name>
+    <url-pattern>/hiddenformlogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>hiddenformdash</servlet-name>
+    <servlet-class>advanced.java.program.HiddenFormDas</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hiddenformdash</servlet-name>
+    <url-pattern>/hiddenformdashboard</url-pattern>
+  </servlet-mapping>
 </web-app>
